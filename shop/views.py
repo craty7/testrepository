@@ -1,3 +1,4 @@
+from tkinter import N
 from django.shortcuts import render, redirect
 from django.db.models import Q
 from django.contrib.auth.decorators import login_required
@@ -94,3 +95,8 @@ def create_order(request):
         'total_price': total_price,
         'amount': amount,
         'form': form})
+
+
+
+def test(request):
+    return None
